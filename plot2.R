@@ -11,6 +11,6 @@ hh$Voltage<-as.numeric(as.character(hh$Voltage))
 
 hh2007feb<-subset(hh, Date %in% as.Date(c("2007-02-01", "2007-02-02")))
 
-png("Plot 2")
+png("plot2.png")
 with(hh2007feb, plot(DateTime, Global_active_power, type="l", xlab="", ylab="Global Active Power"))
 dev.off()
