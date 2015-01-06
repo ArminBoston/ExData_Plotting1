@@ -11,6 +11,6 @@ hh$Voltage<-as.numeric(as.character(hh$Voltage))
 
 hh2007feb<-subset(hh, Date %in% as.Date(c("2007-02-01", "2007-02-02")))
 
-png("Plot 1")
+png("plot1.png")
 hist(hh2007feb$Global_active_power, col="red", xlim=range(0,6), main="Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.off()
