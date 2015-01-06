@@ -11,7 +11,7 @@ hh$Voltage<-as.numeric(as.character(hh$Voltage))
 
 hh2007feb<-subset(hh, Date %in% as.Date(c("2007-02-01", "2007-02-02")))
 
-png("Plot 3")
+png("plot3.png")
 with(hh2007feb, plot(DateTime, Sub_metering_1, type="l", xlab="", ylab="Energy sub metering"))
 with(hh2007feb, lines(DateTime, Sub_metering_2, col="red"))
 with(hh2007feb, lines(DateTime, Sub_metering_3, col="blue"))
